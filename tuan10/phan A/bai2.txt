@@ -1,0 +1,9 @@
+ int* p = new int;
+ int* p2 = p;
+ *p = 10;
+ delete p; 
+*p2 = 100;
+ cout << *p2;
+ delete p2;
+
+// đoạn code trên lỗi ở dòng delete p bởi vì ban đầu con trỏ p2 đang trỏ tới con trỏ p mà dong sau lại xóa con trỏ p nên khi bạn xóa con trỏ p2 thì nó thành sai
